@@ -1,0 +1,12 @@
+import pyautogui
+import time
+def Spambot():
+    time.sleep(10)
+    text =  open("C:\\Users\\baccioalex\\Desktop\\esempio1.txt")
+    for each_line in text:
+       for i in range(100):
+          pyautogui.typewrite(each_line)
+          pyautogui.press('enter')
+
+Spambot()
+
